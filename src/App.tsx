@@ -1,8 +1,12 @@
 import React from "react";
 import axios from "axios";
 
+type dataType = {
+  Hello: string;
+}
+
 function App() {
-  const [data, setData] = React.useState();
+  const [data, setData] = React.useState<dataType>();
   const url = "http://127.0.0.1:8000";
 
   const GetData = () => {
